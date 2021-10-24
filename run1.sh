@@ -15,7 +15,7 @@ ls -l ${directory}P????????.*  | cut -d '.' -f 2 | cut -c 19-27 > homework_list
 
 #using grep -v for missing list
 echo "Dumping missing_list"
-grep -v -f homework_list student_id > missing_list1
+grep -v -f homework_list student_id > missing_list
 
 #move correct files
 echo "Decompressing files to corresponding directories..."
